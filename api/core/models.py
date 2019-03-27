@@ -1,6 +1,7 @@
 from django.db import models
 
 class Livro(models.Model):
+    id = models.AutoField(primary_key=True)
     codigo = models.IntegerField()
     ISBN = models.CharField(max_length=50)
     titulo = models.CharField(max_length=100)
